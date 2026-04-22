@@ -1056,7 +1056,7 @@ button.cta-btn { -webkit-appearance: none; appearance: none; }
   padding: 0;
 }
 .v2 .path-icon-area.has-img .path-icon {
-  position: absolute; inset: 0; width: 100%; height: 100%;
+  position: relative; width: 100%;
 }
 .v2 .path-icon-tag {
   position: absolute; top: 16px; left: 20px;
