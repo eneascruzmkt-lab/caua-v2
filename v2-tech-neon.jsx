@@ -1962,7 +1962,9 @@ function V2({ c }) {
             ))}
           </ul>
 
-          <div className="proof-wrap" style={{marginTop: 64}}>
+          <div className="b02-pivot-body" style={{marginTop: 64}}>{withChips(c.bloco02.pivotBody)}</div>
+
+          <div className="proof-wrap" style={{marginTop: 48}}>
             <div className="proof-phones">
               {['assets/lucro1.webp','assets/lucro2.webp','assets/lucro3.webp','assets/lucro4.webp','assets/lucro5.webp'].map((src, i) => (
                 <div className="proof-phone" key={i}>
@@ -1980,8 +1982,6 @@ function V2({ c }) {
             </div>
             <div className="proof-swipe-hint">← DESLIZE PARA VER →</div>
           </div>
-
-          <div className="b02-pivot-body">{withChips(c.bloco02.pivotBody)}</div>
         </div>
         <V2CTA/>
       </section>
