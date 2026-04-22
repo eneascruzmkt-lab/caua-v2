@@ -1035,7 +1035,7 @@ button.cta-btn { -webkit-appearance: none; appearance: none; }
 .v2 .path-icon-area {
   background: var(--bg-3); border-bottom: 1px solid var(--border);
   padding: 32px 24px; display: flex; align-items: center; justify-content: center;
-  aspect-ratio: 16 / 10; position: relative; overflow: hidden;
+  aspect-ratio: auto; position: relative; overflow: hidden;
 }
 .v2 .path-icon-area::before {
   content: ''; position: absolute; inset: 0;
@@ -1048,8 +1048,8 @@ button.cta-btn { -webkit-appearance: none; appearance: none; }
 .v2 .path-icon { position: relative; z-index: 1; }
 .v2 .path-icon svg { color: var(--neon); filter: drop-shadow(0 0 20px var(--neon-dim)); }
 .v2 .path-img {
-  display: block; width: 100%; height: 100%;
-  object-fit: cover; object-position: center;
+  display: block; width: 100%; height: auto;
+  object-fit: contain; object-position: center;
   filter: drop-shadow(0 0 30px var(--neon-dim));
 }
 .v2 .path-icon-area.has-img {
@@ -1352,7 +1352,7 @@ button.cta-btn { -webkit-appearance: none; appearance: none; }
 
   /* BLOCO 05 */
   .v2 .paths-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
-  .v2 .path-icon-area { aspect-ratio: 16/9; }
+  .v2 .path-icon-area { aspect-ratio: auto; }
   .v2 .path-name { font-size: 30px; }
   .v2 .path-cpa-num { font-size: clamp(60px, 8vw, 90px) !important; }
   .v2 .path-body { padding: 24px 22px 20px; }
@@ -1514,12 +1514,12 @@ button.cta-btn { -webkit-appearance: none; appearance: none; }
   /* BLOCO 05 — PATHS */
   .v2 .paths-grid { grid-template-columns: 1fr !important; gap: 18px; }
   .v2 .path-card { min-height: auto; }
-  .v2 .path-icon-area { min-height: auto; padding: 0; aspect-ratio: 16/15; }
+  .v2 .path-icon-area { min-height: auto; padding: 0; aspect-ratio: auto; }
   .v2 .path-body { padding: 24px 20px 28px; }
   .v2 .path-name { font-size: 22px; }
   .v2 .path-cpa-num { font-size: clamp(46px, 14vw, 68px) !important; }
   .v2 .path-bullets li { font-size: 14px; line-height: 1.45; }
-  .v2 .path-img { aspect-ratio: 16/15; }
+  .v2 .path-img { width: 100%; height: auto; }
 
   /* BLOCO 06 — PARA QUEM É */
   .v2 .foryou h2 { font-size: clamp(36px, 10vw, 54px) !important; white-space: normal !important; margin: 16px 0 36px; line-height: 1.05 !important; text-align: center; }
@@ -1900,7 +1900,6 @@ function V2({ c }) {
         <div className="container">
           <div className="section-head">
             <div className="section-head-title">
-              <div className="label">◈ {c.bloco02.eyebrow}</div>
               <h2>
                 A falsa onda do <Chip brand="meta">Meta</Chip> <span className="b02-amp">&</span> <Chip brand="google">Google</Chip>
                 <span className="slash">.</span>
