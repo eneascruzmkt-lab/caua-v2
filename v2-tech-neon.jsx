@@ -1860,7 +1860,7 @@ function V2({ c }) {
             <div className="section-head-title">
               <div className="label">◈ {c.bloco02.eyebrow}</div>
               <h2>
-                A falsa onda do <MetaIcon size={32}/><Chip brand="meta">Meta</Chip> <span className="b02-amp">&</span> <GoogleAdsIcon size={32}/><Chip brand="google">Google</Chip>
+                A falsa onda do <Chip brand="meta">Meta</Chip> <span className="b02-amp">&</span> <Chip brand="google">Google</Chip>
                 <span className="slash">.</span>
               </h2>
               <div className="b02-subtitle">{c.bloco02.subtitle}</div>
