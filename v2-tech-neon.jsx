@@ -590,7 +590,7 @@ button.cta-btn { -webkit-appearance: none; appearance: none; }
 .v2 .wa-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
 
 /* PROOF PHONES — real print screenshots in iPhone frames */
-.v2 .proof-phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 32px; align-items: start; }
+.v2 .proof-phones { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 32px; margin-top: 32px; align-items: start; }
 .v2 .proof-phone { display: flex; flex-direction: column; align-items: center; gap: 14px; }
 .v2 .proof-phone-frame {
   position: relative; width: 100%; max-width: 200px; aspect-ratio: 9/19.5;
@@ -1963,6 +1963,25 @@ function V2({ c }) {
               </li>
             ))}
           </ul>
+
+          <div className="proof-wrap" style={{marginTop: 64}}>
+            <div className="proof-phones">
+              {['assets/lucro1.webp','assets/lucro2.webp','assets/lucro3.webp','assets/lucro4.webp','assets/lucro5.webp'].map((src, i) => (
+                <div className="proof-phone" key={i}>
+                  <div className="proof-phone-frame">
+                    <div className="proof-phone-notch"/>
+                    <img src={src} alt={`Print de lucro ${i+1}`} className="proof-phone-img"/>
+                    <div className="proof-phone-flash"/>
+                  </div>
+                  <div className="proof-phone-cap">
+                    <span className="proof-phone-k" style={{background: 'rgba(37,244,238,0.1)', border: '1px solid rgba(37,244,238,0.3)', color: 'var(--cyan)'}}>0{i+1}</span>
+                    <span className="proof-phone-t">LUCRO POSITIVO · TIKTOK</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="proof-swipe-hint">← DESLIZE PARA VER →</div>
+          </div>
         </div>
         <V2CTA/>
       </section>
