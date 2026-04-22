@@ -1009,7 +1009,7 @@ button.cta-btn { -webkit-appearance: none; appearance: none; }
 .v2 .paths-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .v2 .path-card {
   border: 1px solid var(--border); padding: 0; background: var(--bg-2);
-  position: relative; min-height: 580px; display: flex; flex-direction: column;
+  position: relative; min-height: auto; display: flex; flex-direction: column;
   transition: border-color .2s; overflow: hidden;
 }
 .v2 .path-card:hover { border-color: var(--neon); }
@@ -1034,7 +1034,7 @@ button.cta-btn { -webkit-appearance: none; appearance: none; }
 .v2 .path-icon-area {
   background: var(--bg-3); border-bottom: 1px solid var(--border);
   padding: 32px 24px; display: flex; align-items: center; justify-content: center;
-  aspect-ratio: 16 / 15; position: relative; overflow: hidden;
+  aspect-ratio: 16 / 10; position: relative; overflow: hidden;
 }
 .v2 .path-icon-area::before {
   content: ''; position: absolute; inset: 0;
@@ -1069,8 +1069,8 @@ button.cta-btn { -webkit-appearance: none; appearance: none; }
   color: var(--fg-3); letter-spacing: 0.18em; text-transform: uppercase;
 }
 
-.v2 .path-body { padding: 36px 32px 32px; flex: 1; display: flex; flex-direction: column; }
-.v2 .path-name { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 42px; letter-spacing: -0.035em; margin: 0 0 20px; line-height: 0.95; }
+.v2 .path-body { padding: 28px 28px 24px; flex: 1; display: flex; flex-direction: column; }
+.v2 .path-name { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 36px; letter-spacing: -0.035em; margin: 0 0 16px; line-height: 0.95; }
 
 /* CPA HERO — display gigante, destaque máximo */
 .v2 .path-cpa {
