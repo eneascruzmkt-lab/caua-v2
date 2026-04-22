@@ -1953,7 +1953,7 @@ function V2({ c }) {
 
           <div className="b02-pivot-body">{withChips(c.bloco02.pivotBody)}</div>
 
-          <div className="label" style={{marginTop: 64, marginBottom: 20}}>◈ {c.bloco02.pivotResultsTitle}</div>
+          <div className="label label-neon" style={{marginTop: 64, marginBottom: 20, fontSize: '14px', letterSpacing: '0.3em', padding: '12px 20px', border: '1px solid var(--neon-dim)', background: 'var(--neon-soft)', display: 'inline-block'}}>◈ {c.bloco02.pivotResultsTitle}</div>
           <ul className="b02-results">
             {c.bloco02.pivotResults.map((r, i) => (
               <li key={i}>
@@ -1989,7 +1989,6 @@ function V2({ c }) {
         <div className="container">
           <div className="section-head">
             <div className="section-head-title">
-              <div className="label">◈ {c.bloco03.eyebrow}</div>
               <h2 className="b03-head">
                 Enquanto todos estavam focados nas principais redes, eu descobri um <span className="b03-mar-azul">mar azul</span> praticamente intocado.
               </h2>
@@ -2050,7 +2049,6 @@ function V2({ c }) {
         </div>
         <div className="pegar-scan"/>
         <div className="container">
-          <div className="label">◈ {c.bloco04.eyebrow}</div>
           <h2>Eu vou pegar <span className="neon">na sua mão.</span></h2>
           <p className="pegar-body">{withChips(c.bloco04.body)}</p>
           <div className="label" style={{marginBottom:16}}>◈ {c.bloco04.subtitle}</div>
@@ -2075,7 +2073,6 @@ function V2({ c }) {
         <div className="container">
           <div className="section-head section-head-full">
             <div className="section-head-top">
-              <div className="label">◈ {c.bloco05.eyebrow}</div>
             </div>
             <h2 className="section-head-h2-full">Existem 2 caminhos pra você faturar <span className="neon">MILHARES DE DÓLARES</span> todos os dias, e eu posso te ajudar em ambos…</h2>
           </div>
@@ -2135,7 +2132,6 @@ function V2({ c }) {
         <div className="container">
           <div className="section-head section-head-full">
             <div className="section-head-top">
-              <div className="label">◈ {c.bloco06.eyebrow}</div>
             </div>
             <h2 className="section-head-h2-full">Para quem é a <span className="neon">consultoria</span>…</h2>
           </div>
@@ -2160,7 +2156,6 @@ function V2({ c }) {
           <img src="assets/caua1.webp" alt=""/>
         </div>
         <div className="container offer-container">
-          <div className="offer-eyebrow">◈ {c.bloco07.eyebrow}</div>
           <div className="offer-big">{c.bloco07.bigTitle}</div>
           <h2 className="offer-smash"><span className="strike">Não vou te vender</span> <span className="neon">nada.</span></h2>
           <div className="offer-body">
