@@ -115,13 +115,14 @@ const V2_STYLES = `
 .v2 .display-brand.meta .tag, .v2 .display-brand.google .tag { color: rgba(254, 44, 85, 0.7); }
 .v2 .display-brand.tiktok .tag {
   color: var(--cyan);
-  right: auto; left: 100%;
+  position: relative; left: auto; right: auto; top: auto;
+  display: inline-block;
   margin-left: 24px;
   padding: 8px 12px;
   border: 1px solid var(--cyan-dim);
   background: rgba(37, 244, 238, 0.06);
   box-shadow: 0 0 28px rgba(37, 244, 238, 0.06);
-  top: 50%; transform: translateY(-50%);
+  transform: none; vertical-align: middle;
 }
 
 /* HUD STAT CARDS — dopamine beats */
