@@ -1319,11 +1319,51 @@ button.cta-btn { -webkit-appearance: none; appearance: none; }
 /* TABLET (≤1024px) */
 @media (max-width: 1024px) {
   .v2 .container { padding: 0 28px; }
-  .v2 .hero-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
-  .v2 .hero h1 { font-size: clamp(48px, 8vw, 88px); }
-  .v2 .paths-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
-  .v2 .pegar h2 { font-size: clamp(40px, 6vw, 64px); }
   .v2 .section { padding: 100px 0; }
+
+  /* HERO */
+  .v2 .hero { padding: 40px 28px 72px; }
+  .v2 .hero-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .v2 .hero h1 { font-size: clamp(32px, 4.5vw, 56px); }
+  .v2 .hero-subs p { font-size: 15px; }
+  .v2 .hero-highlight { font-size: 14px; padding: 16px 18px; }
+  .v2 .hero-portrait-big { min-height: 480px; }
+  .v2 .hero-bottom { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .v2 .hero-stat .n { font-size: 26px; }
+
+  /* BLOCO 02 */
+  .v2 .pains-grid { grid-template-columns: repeat(2, 1fr); }
+  .v2 .pain-cell:nth-child(2) { border-right: none; }
+  .v2 .display-brand { font-size: clamp(60px, 8vw, 100px); }
+  .v2 .b02-pivot-body { font-size: 17px; }
+  .v2 .stat-row { grid-template-columns: repeat(3, 1fr); }
+  .v2 .proof-phones { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .v2 .proof-phone-frame { max-width: 160px; }
+
+  /* BLOCO 03 */
+  .v2 .b03-item-card { grid-template-columns: 80px 1fr; gap: 20px; padding: 24px 28px; }
+  .v2 .b03-display-word { font-size: clamp(48px, 7vw, 88px); }
+
+  /* BLOCO 04 */
+  .v2 .pegar h2 { font-size: clamp(40px, 6vw, 64px); }
+  .v2 .pegar-items { grid-template-columns: repeat(3, 1fr); }
+  .v2 .pegar-item:nth-child(3) { border-right: none; }
+  .v2 .pegar-bg-mosaic img { height: 60%; max-height: 500px; }
+
+  /* BLOCO 05 */
+  .v2 .paths-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .v2 .path-icon-area { aspect-ratio: 16/9; }
+  .v2 .path-name { font-size: 30px; }
+  .v2 .path-cpa-num { font-size: clamp(60px, 8vw, 90px) !important; }
+  .v2 .path-body { padding: 24px 22px 20px; }
+
+  /* BLOCO 06 */
+  .v2 .foryou h2 { font-size: clamp(36px, 5vw, 52px); }
+  .v2 .foryou-t { font-size: 17px; }
+
+  /* BLOCO 07 */
+  .v2 .offer-smash { font-size: clamp(40px, 6vw, 80px); }
+  .v2 .offer .cta-btn.jumbo { padding: 26px 40px; font-size: 15px; }
 }
 
 /* MOBILE (≤768px) */
