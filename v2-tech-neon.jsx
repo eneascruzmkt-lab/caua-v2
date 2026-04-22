@@ -58,6 +58,17 @@ const V2_STYLES = `
 .v2 .chip-google { color: #ffcf4d; }
 .v2 .chip-tiktok { color: var(--cyan); }
 
+/* Brand icons negative treatment */
+.v2 .brand-icon-neg {
+  display: inline-block; vertical-align: middle;
+  opacity: 0.5; margin-right: 6px;
+  filter: saturate(0.3);
+  transform: translateY(-2px);
+}
+.v2 .b02-amp {
+  color: #ffffff; font-weight: 300;
+}
+
 /* DISPLAY TYPE — large typographic moments for brand first-mentions */
 .v2 .display-brand {
   display: block;
@@ -1545,6 +1556,21 @@ const TikTokIcon = ({ size = 52 }) => (
   </svg>
 );
 
+const MetaIcon = ({ size = 28 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className="brand-icon-neg">
+    <path d="M6.915 4.03c-1.968 0-3.402 1.3-4.55 2.88-.876 1.206-1.517 2.727-1.892 3.555a.458.458 0 0 0 0 .374c.375.828 1.016 2.35 1.893 3.555 1.147 1.58 2.581 2.88 4.549 2.88 1.968 0 2.926-.88 3.58-1.838a6.28 6.28 0 0 0 .663-1.227h.063a6.28 6.28 0 0 0 .663 1.227c.654.958 1.612 1.838 3.58 1.838s3.402-1.3 4.55-2.88c.876-1.206 1.517-2.727 1.892-3.555a.458.458 0 0 0 0-.374c-.375-.828-1.016-2.35-1.893-3.555-1.147-1.58-2.581-2.88-4.549-2.88-1.968 0-2.926.88-3.58 1.838a6.28 6.28 0 0 0-.663 1.227h-.063a6.28 6.28 0 0 0-.663-1.227C9.841 4.91 8.883 4.03 6.915 4.03zM4.21 12c.263-.547.742-1.477 1.392-2.372C6.592 8.204 7.67 7.28 8.915 7.28c.406 0 .737.086 1.013.224L6.39 12.858a.248.248 0 0 1-.424.008A10.152 10.152 0 0 1 4.21 12zm4.603 2.39c-.986.63-1.898.86-1.898.86s.647 1.5 1.898 1.5c.742 0 1.29-.344 1.697-.838L8.813 14.39zm4.27-4.78c.407-.494.955-.838 1.697-.838 1.245 0 2.323.924 3.313 2.348.65.895 1.13 1.825 1.392 2.372a10.152 10.152 0 0 1-1.756.866.248.248 0 0 1-.424-.008l-3.538-5.364a2.05 2.05 0 0 1 1.013-.224l-1.697.848z"/>
+  </svg>
+);
+
+const GoogleAdsIcon = ({ size = 28 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className="brand-icon-neg">
+    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+    <circle cx="7" cy="18.5" r="3.5"/>
+    <circle cx="17" cy="5.5" r="3.5"/>
+    <rect x="5" y="8" width="14" height="8" rx="1" opacity="0.3"/>
+  </svg>
+);
+
 const PillIcon = ({ size = 100 }) => (
   <svg width={size} height={size} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.8">
     {/* frasco / pote */}
@@ -1833,7 +1859,7 @@ function V2({ c }) {
             <div className="section-head-title">
               <div className="label">◈ {c.bloco02.eyebrow}</div>
               <h2>
-                A falsa onda do <Chip brand="meta">Meta</Chip> <span className="slash">&</span> <Chip brand="google">Google</Chip>
+                A falsa onda do <MetaIcon size={32}/><Chip brand="meta">Meta</Chip> <span className="b02-amp">&</span> <GoogleAdsIcon size={32}/><Chip brand="google">Google</Chip>
                 <span className="slash">.</span>
               </h2>
               <div className="b02-subtitle">{c.bloco02.subtitle}</div>
