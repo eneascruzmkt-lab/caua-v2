@@ -1953,7 +1953,9 @@ function V2({ c }) {
 
           <div className="b02-pivot-body">{withChips(c.bloco02.pivotBody)}</div>
 
-          <div className="proof-wrap" style={{marginTop: 48}}>
+          <div className="label label-neon" style={{marginTop: 64, marginBottom: 20, fontSize: '14px', letterSpacing: '0.3em', padding: '12px 20px', border: '1px solid var(--neon-dim)', background: 'var(--neon-soft)', display: 'inline-block'}}>◈ {c.bloco02.pivotResultsTitle}</div>
+
+          <div className="proof-wrap" style={{marginTop: 32}}>
             <div className="proof-phones">
               {['assets/lucro1.webp','assets/lucro2.webp','assets/lucro3.webp','assets/lucro4.webp','assets/lucro5.webp'].map((src, i) => (
                 <div className="proof-phone" key={i}>
@@ -1971,8 +1973,6 @@ function V2({ c }) {
             </div>
             <div className="proof-swipe-hint">← DESLIZE PARA VER →</div>
           </div>
-
-          <div className="label label-neon" style={{marginTop: 64, marginBottom: 20, fontSize: '14px', letterSpacing: '0.3em', padding: '12px 20px', border: '1px solid var(--neon-dim)', background: 'var(--neon-soft)', display: 'inline-block'}}>◈ {c.bloco02.pivotResultsTitle}</div>
           <ul className="b02-results">
             {c.bloco02.pivotResults.map((r, i) => (
               <li key={i}>
