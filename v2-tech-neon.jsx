@@ -97,10 +97,11 @@ const V2_STYLES = `
   color: var(--fg);
   position: relative;
   display: inline-block;
+  margin-left: auto; margin-right: auto;
 }
 .v2 .display-brand.tiktok::after {
   content: ''; display: block;
-  width: 60%; height: 6px; margin-top: 8px;
+  width: 60%; height: 6px; margin-top: 8px; margin-left: auto; margin-right: auto;
   background: var(--cyan); box-shadow: 0 0 24px var(--cyan-dim);
 }
 .v2 .display-brand .tag {
