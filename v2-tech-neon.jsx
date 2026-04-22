@@ -96,7 +96,8 @@ const V2_STYLES = `
 .v2 .display-brand.tiktok {
   color: var(--fg);
   position: relative;
-  display: inline-block;
+  display: block;
+  width: fit-content;
   margin-left: auto; margin-right: auto;
 }
 .v2 .display-brand.tiktok::after {
